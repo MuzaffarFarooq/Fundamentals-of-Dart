@@ -3,10 +3,10 @@ WRITE A PROGRAM THAT INPUTS TWO NUMBERS AND ONE SIMPLE ARITHMETIC OPERATOR.
  It APPLIES ARITHMETIC OPERATION ON NUMBERS ON BASIS OF OPERATOR BY USING SWITCH STATEMENT.
 */
 void main() {
-  double no1 = 8;
+  int no1 = 8;
   String ch = '+';
-  double no2 = 3;
-  double result;
+  int no2 = 3;
+  int result;
   switch (ch) {
     case '+':
       {
@@ -28,7 +28,9 @@ void main() {
       break;
     case '/':
       {
-        result = (no1 / no2);
+        result = (no1 ~/
+            no2); //It divides the first operand by the second operand and returns integer quotient.
+        //only used with integer values for double use "/"
         print("no1  /  no2 + = $result");
       }
       break;
